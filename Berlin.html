@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="berlin.jpg">
+
+    <title>Берлинский фестиваль</title>
+
+    <link rel="canonical" href="C:\Users\Ольга\Downloads\англ яз\дз\курсач\Berlin.html">
+    <link href="stile.css" rel="stylesheet">
+  </head>
+  <body class="all_b">
+    <header>
+      <nav class="stroka_link">
+        <ul id="navbar">
+          <li><a href="index.html">Кинофестивали</a></li>
+            <li><a href="nagrada.html">Награды</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="o_nas.html">О нас</a></li>
+        <li><form class="form-inline">
+            <input type="text" placeholder="Поиск" aria-label="Поиск">
+            <button class="utline" type="submit">Поиск</button>
+          </form></li></ul>
+      </nav>
+    </header>
+      <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img class="carusel" src="testimonial1.jpg">
+              <div class="text">Berlinale</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img class="carusel" src="testimonial2.jpg">
+              <div class="text">Берлинский международный кинофестиваль.</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img class="carusel" src="testimonial3.jpg">
+              <div class="text">Проходит в феврале</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            <div class="oncl">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+<div class="abz">
+    <p>Первый в календаре FIAPF фестиваль класса «А», стартующий уже в начале февраля, оказывается одновременно и одним из самых значимых (и, возможно, самым посещаемым в мире). Конкурс Берлинале формируется с тем расчетом, чтобы обеспечить широкое представительство европейских кинематографий. Принято также считать, что сюда чаще отбирают фильмы, снятые в традиционной манере, и кино на политические темы.</p>
+<p>Отдельные программы, представленные на фестивале, кураторы составляют самостоятельно, не рассматривая заявки со стороны. Тем не менее фильмы не слишком опытных режиссеров, которым сложно пробиться в основной конкурс, вполне могут быть включены в менее значимые программы «Панорама» (международное артхаусное кино), «Форум» (фильмы экспериментального толка), «Поколение» (детское и юношеское кино), Berlinale Shorts (короткий метр). Новое российское кино уже показывали и в конкурсе Берлинского фестиваля (вспомним «Долгую счастливую жизнь» Бориса Хлебникова), и в программах рангом пониже (недавние фильмы Алексея Мизгирёва и Анны Меликян).</p>
+<p>На Берлинском фестивале также функционирует чрезвычайно крупный кинорынок European Film Market, по размерам сравнимый с Каннским (отчитываясь за прошлый год, организаторы заявляют о восьми с лишним тысячах участников из 107 стран, показавших на рынке 784 фильма), и рынок копродукции. Не забывают здесь и о развитии молодых талантов, предлагая им принять участие в проектах Berlinale Residency (трехмесячное проживание в Берлине со стипендией в 1500 евро для режиссеров или сценаристов, которым специалисты помогают довести до ума начатые проекты) и Berlinale Talents (краткосрочные обучающие программы для ежегодно набираемых групп студентов киношкол со всего мира).</p>
+</div>
+      </main>
+      <footer>
+        <p>Компания ooo. Все права защищены.</p>
+      </footer>
+  </body>
