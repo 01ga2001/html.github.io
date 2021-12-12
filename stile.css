@@ -227,4 +227,7 @@
       .container {
           border-radius: 5px;
           padding: 20px;}
-          
+      .new_card{
+          width: 100%;
+          height: 70%; 
+}
